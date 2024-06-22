@@ -26,8 +26,7 @@ python Dmpr_eval.py.py
 ## Inference 
 
 ---
-<div align="center">
-    <a href="./">
-        <img src="./results/planeSegResult.png" width="49%"/>
-    </a>
-</div>
+
+![image](./results/PlaneSegResult.png)
+
+
