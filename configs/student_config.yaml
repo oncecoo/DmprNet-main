@@ -1,0 +1,35 @@
+seed: 123
+resume_dir: None
+save_model: True
+save_log: True
+save_path: my_student_runs
+if_debug: False
+debug_interval: 150
+
+num_epochs: 50
+print_interval: 50
+save_step: 2
+aux_weight: 0.2
+
+solver:
+  method: adam
+  lr: 0.0001
+  weight_decay: 0.00001
+  lr_step: 15
+  gamma: 0.5
+
+dataset:
+  name: 'scannet'
+  root_dir: /dssg/home/zhineng_rf/scannet_data_with_line
+  b_size: 8 #-----------------------------------------------
+  num_workers: 12
+  root_dir_names: []
+
+model:
+  pretrained: True
+  plane_embedding_dim: 8
+  if_distill: True
+  fix_bn: False
+
+
+
